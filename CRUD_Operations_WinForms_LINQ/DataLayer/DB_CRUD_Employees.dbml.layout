@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DB_CRUD_Employees">
+  <DataContextMoniker Name="/DB_CRUD_EmployeesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="08fd9fbd-2832-4590-8211-99688fb36c6f" absoluteBounds="3, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DB_CRUD_EmployeesDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f537afa-4fec-4d48-8ce9-2b879ec13a15" absoluteBounds="3.015, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba518782-24c6-4881-92da-82ca03dff0ea" absoluteBounds="6.125, 1, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/DB_CRUD_EmployeesDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="913bb78a-642e-4dcb-8bba-e9d2734175c1" absoluteBounds="6.14, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 1.77739616842831); (5.58333333333333 : 1.77739616842831); (5.58333333333333 : 3.3401015479966); (5 : 3.3401015479966)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Caller">
+      <AssociationMoniker Name="/DB_CRUD_EmployeesDataContext/User/User_Employee" />
+      <nodes>
+        <classShapeMoniker Id="ba518782-24c6-4881-92da-82ca03dff0ea" />
+        <classShapeMoniker Id="08fd9fbd-2832-4590-8211-99688fb36c6f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
