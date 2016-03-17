@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9481E68-8829-4B15-9AEA-64CF87310D94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRUD_Operations.Presentation</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\..\..\Visual Studio 2015\Components\AForge.NET Framework v2.2.5 (libs only)\Release\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\Visual Studio 2015\Components\AForge.NET Framework v2.2.5 (libs only)\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\Visual Studio 2015\Components\AForge.NET Framework v2.2.5 (libs only)\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAbout.Designer.cs">
+      <DependentUpon>PAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDeleteEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDeleteEmployees.Designer.cs">
+      <DependentUpon>PDeleteEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PMainMenu.Designer.cs">
+      <DependentUpon>PMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRegisterEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRegisterEmployees.Designer.cs">
+      <DependentUpon>PRegisterEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PSearchEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PSearchEmployees.Designer.cs">
+      <DependentUpon>PSearchEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PUpdateEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PUpdateEmployees.Designer.cs">
+      <DependentUpon>PUpdateEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validations.cs" />
+    <EmbeddedResource Include="PAbout.resx">
+      <DependentUpon>PAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDeleteEmployees.resx">
+      <DependentUpon>PDeleteEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PMainMenu.resx">
+      <DependentUpon>PMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRegisterEmployees.resx">
+      <DependentUpon>PRegisterEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PSearchEmployees.resx">
+      <DependentUpon>PSearchEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PUpdateEmployees.resx">
+      <DependentUpon>PUpdateEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{7c50ecee-03db-4fab-948e-6a5ef3d6cc82}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{79d232de-0f2d-4723-8737-d035ed4c4062}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
